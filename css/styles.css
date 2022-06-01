@@ -374,7 +374,7 @@ aside{
     }
 }
 
-/* Celular */
+/* Celular (normal)*/
 /* La idea a futuro es hacer que la sección de filtros sea un desplegable. */
 
 @media screen and (max-width: 425px){
