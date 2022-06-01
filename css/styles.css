@@ -308,6 +308,13 @@ aside{
 
 /* ------------------------------------------------------------------------------ MEDIA QUERIES ----------------------------------------------------------------------------------------*/
 
+/* Laptop L*/
+@media screen and (max-width: 1440px){
+    .filters ul{
+        padding: 0px;
+    }
+}
+
 /* Laptop */
 @media screen and (max-width: 1024px){
     .filters{
@@ -320,6 +327,10 @@ aside{
 
     .filters h4{
         margin: 10px 0px 3px 18px;
+    }
+
+    .filters ul{
+        padding-left: 40px;
     }
 }
 
@@ -342,7 +353,7 @@ aside{
     .filters ul{
         list-style: none;
         margin: 0px 0px;
-        display: contents;
+        padding-left: 30px;
     }
 
     .nosotros-img-container img{
@@ -426,6 +437,10 @@ aside{
 
     .filters li{
         display: inline-flex;
+    }
+
+    .filters ul{
+        padding-left: 0px;
     }
 
     .products{
