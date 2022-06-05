@@ -18,6 +18,15 @@ header{
     flex-direction: column;
 }
 
+h1{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+h2{
+    font-weight: bold;
+}
+
 .navbar-menu{
     background-color: #52796f;
     display: flex;
@@ -25,6 +34,7 @@ header{
     position: fixed;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 2; /* Añado esta propiedad para que la navbar pase por encima del carousel al scrollear. */
 }
 
 .navbar-menu .navbar-logo{
