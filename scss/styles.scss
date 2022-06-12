@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+html{
+    min-height: 100%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+.navbar-menu{
+    background-color: #52796f;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2; /* Añado esta propiedad para que la navbar pase por encima del carousel al scrollear. */
+
+    .navbar-logo{
+        margin-left: 5%;
+        color: white;
+    }
+    
+    .navbar-items{
+        display: flex;
+
+        div{
+            display: flex;
+            background-color: #52796f;
+            width: 100px;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+            }
+            a:hover{
+                text-shadow: 1px 1px 3px white;
+                font-weight: bold;
+            }
+        }
+        div:hover{
+            background-color: #354f52;
+        }
+    }
+}
+
+.footer{
+    background-color: rgb(182, 181, 181);
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+
+    p{
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+.container-principal{
+    background-color: #cad2c5;
+    margin: 80px 50px 20px 50px;
+    padding: 30px;
+
+    h2{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.links-networks-social{
+    display: flex;
+    justify-content: center;
+
+    a{
+        margin: 25px;
+
+        img{
+            height: 130px; 
+            width: 130px;
+        }
+    }
+}
+
+.container-catalogue{
+    display: flex;
+    flex-flow: row;
+}
+
+.filters{
+    display: inline-flex;
+    flex-direction: column;
+    width: 10%;
+    padding: 10px;
+    border-right: 1px solid #52796f;
+
+    div{
+        padding-left: 20px;
+    }
+
+    h3{
+        margin: 10px 0px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    h4{
+        margin: 10px 0px;
+    }
+    
+    ul{
+        list-style: none;
+        margin: 5px 0px;
+    }
+}
+
+.products{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 90%;
+    justify-content: space-evenly;
+
+    article{
+        display: flex;
+        width: 300px;
+        height: 330px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+    width: 200px;
+    height: 230px;
+    justify-content: space-between;
+    transition: padding 1s;
+
+    img{
+        height: 200px; 
+        width: 200px;
+        transition: 1s;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding-top: 7px;
+    }
+}
+
+.product-card:hover{
+    background-color: #52796f;
+    padding: 25px;
+
+    img{
+        height: 210px;
+        width: 210px;
+    }
+
+    a{
+        color: white;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+.nosotros-img-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    img{
+        height: 400px; 
+        width: 800px;
+    }
+}
+
+.container-details-product{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-img-product{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+
+    img{
+        height: 400px;
+        width: 400px;
+    }
+}
+
+.container-description-product{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 30px;
+
+    h3{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+    
+    p{
+        margin: 0px;
+    }
+}
+
+.container-comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+
+    h3{
+        text-decoration: underline;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+
+        label{
+            margin: 10px 0px;
+        }
+        input{
+            margin-bottom: 10px;
+            border-color: #52796f;
+            border-style: solid;
+            border-width: 1px;
+            height: 20px;
+        }
+        textarea{
+            margin-bottom: 10px;
+            border-color: #52796f;
+        }
+        button{
+            margin: 10px;
+            border: none;
+            background-color: #52796f;
+            color: white;
+            font-size: 15px;
+            height: 30px;
+        }
+        button:hover{
+            background-color: #354f52;
+        }
+    }
+}
+
+#body-grid{
+    display: grid;
+    grid-template-areas: "header"
+                         "section"
+                         "footer";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+header{
+    grid-area: header;
+}
+
+section{
+    grid-area: section;
+}
+
+footer{
+    grid-area: footer;
+}
+
+aside{
+    grid-area: aside;
+}
+
+/* ------------------------------------------------------------------------------ MEDIA QUERIES ----------------------------------------------------------------------------------------*/
+
+/* Laptop L*/
+@media screen and (max-width: 1440px){
+    .filters ul{
+        padding: 0px;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px){
+    .filters{
+        width: 25%;
+
+        div{
+            padding-left: 0px;
+        }
+        h4{
+            margin: 10px 0px 3px 18px;
+        }
+        ul{
+            padding-left: 40px;
+        }
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px){
+    .filters{
+        width: 35%;
+
+        div{
+            padding-left: 0px;
+            margin-bottom: 8px;
+        }
+        h4{
+            margin: 10px 0px 3px 0px;
+        }
+        ul{
+            list-style: none;
+            margin: 0px 0px;
+            padding-left: 30px;
+        }
+    }
+
+    .nosotros-img-container img{
+        height: 300px; 
+        width: 600px;
+    }
+
+    .container-details-product{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-img-product{
+        display: flex;
+        width: auto;
+
+        img{
+            height: 320px;
+            width: 320px;
+            align-items: center;
+        }
+    }
+
+    .container-description-product{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding-top: 30px;
+    }
+}
+
+/* Celular (normal)*/
+/* La idea a futuro es hacer que la sección de filtros sea un desplegable. */
+
+@media screen and (max-width: 425px){
+    .navbar-menu{
+        flex-direction: column;
+
+        .navbar-logo{
+            margin-left: 0%;
+            color: white;
+            background-color: #354f52;
+
+            h1{
+                margin: 10px;
+            }
+        }
+        .navbar-items div{
+            width: 100px;
+            height: 50px;
+        }
+    } 
+
+    .container-principal{
+        background-color: #cad2c5;
+        margin: 110px 15px 20px 15px;
+        padding: 20px;
+    }
+
+    .container-catalogue{
+        flex-flow: column;
+    }
+
+    .filters{
+        width: auto;
+        border-right: none;
+        border-bottom: 1px solid #52796f;
+        align-items: baseline;
+
+        h3{
+            margin: 0px;
+            text-align: left;
+            text-decoration: underline;
+        }
+        h4{
+            margin: 10px 0px 3px 0px;
+        }
+        li{
+            display: inline-flex;
+        }
+        ul{
+            padding-left: 0px;
+        }
+    }
+
+    .products{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros-img-container img{
+        height: 180px; 
+        width: 360px;
+    }
+
+    .links-networks-social a img{
+        height: 70px; 
+        width: 70px;
+    }
+}
