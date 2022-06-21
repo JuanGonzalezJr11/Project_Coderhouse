@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
 html{
     min-height: 100%;
 }
@@ -39,15 +44,16 @@ h2{
         margin-left: 5%;
         color: white;
     }
-    
+
     .navbar-items{
         display: flex;
 
         div{
             display: flex;
             background-color: #52796f;
-            width: 100px;
-            height: 70px;
+            // width: 100px;
+            // height: 70px;
+            @include sizes(100px, 70px);
             justify-content: center;
             align-items: center;
 
@@ -100,8 +106,9 @@ h2{
         margin: 25px;
 
         img{
-            height: 130px; 
-            width: 130px;
+            // height: 130px;
+            // width: 130px;
+            @include sizes(130px, 130px);
         }
     }
 }
@@ -127,11 +134,11 @@ h2{
         text-align: center;
         text-decoration: underline;
     }
-    
+
     h4{
         margin: 10px 0px;
     }
-    
+
     ul{
         list-style: none;
         margin: 5px 0px;
@@ -147,8 +154,9 @@ h2{
 
     article{
         display: flex;
-        width: 300px;
-        height: 330px;
+        // width: 300px;
+        // height: 330px;
+        @include sizes(300px, 330px);
         justify-content: center;
         align-items: center;
     }
@@ -160,14 +168,16 @@ h2{
     align-items: center;
     padding: 5px;
     margin: 10px;
-    width: 200px;
-    height: 230px;
+    // width: 200px;
+    // height: 230px;
+    @include sizes(200px, 230px);
     justify-content: space-between;
     transition: padding 1s;
 
     img{
-        height: 200px; 
-        width: 200px;
+        // height: 200px;
+        // width: 200px;
+        @include sizes(200px, 200px);
         transition: 1s;
     }
 
@@ -184,8 +194,9 @@ h2{
     padding: 25px;
 
     img{
-        height: 210px;
-        width: 210px;
+        // height: 210px;
+        // width: 210px;
+        @include sizes(210px, 210px);
     }
 
     a{
@@ -204,8 +215,9 @@ h2{
     margin-bottom: 20px;
 
     img{
-        height: 400px; 
-        width: 800px;
+        // height: 400px;
+        // width: 800px;
+        @include sizes(400px, 800px);
     }
 }
 
@@ -220,8 +232,9 @@ h2{
     justify-content: center;
 
     img{
-        height: 400px;
-        width: 400px;
+        // height: 400px;
+        // width: 400px;
+        @include sizes(400px, 400px);
     }
 }
 
@@ -236,7 +249,7 @@ h2{
         margin-bottom: 10px;
         text-decoration: underline;
     }
-    
+
     p{
         margin: 0px;
     }
@@ -251,7 +264,7 @@ h2{
     h3{
         text-decoration: underline;
     }
-    
+
     form{
         display: flex;
         flex-direction: column;
@@ -356,8 +369,9 @@ aside{
     }
 
     .nosotros-img-container img{
-        height: 300px; 
-        width: 600px;
+        // height: 300px;
+        // width: 600px;
+        @include sizes(300px, 600px);
     }
 
     .container-details-product{
@@ -370,8 +384,9 @@ aside{
         width: auto;
 
         img{
-            height: 320px;
-            width: 320px;
+            // height: 320px;
+            // width: 320px;
+            @include sizes(320px, 320px);
             align-items: center;
         }
     }
@@ -401,10 +416,11 @@ aside{
             }
         }
         .navbar-items div{
-            width: 100px;
-            height: 50px;
+            // width: 100px;
+            // height: 50px;
+            @include sizes(100px, 50px);
         }
-    } 
+    }
 
     .container-principal{
         background-color: #cad2c5;
@@ -444,12 +460,14 @@ aside{
     }
 
     .nosotros-img-container img{
-        height: 180px; 
-        width: 360px;
+        // height: 180px;
+        // width: 360px;
+        @include sizes(180px, 360px);
     }
 
     .links-networks-social a img{
-        height: 70px; 
-        width: 70px;
+        // height: 70px;
+        // width: 70px;
+        @include sizes(70px, 70px);
     }
 }
