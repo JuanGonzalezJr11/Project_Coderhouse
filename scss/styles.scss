@@ -25,6 +25,7 @@ header{
 h1{
     font-weight: bold;
     margin: 10px 0px;
+    font-size: 35px;
 }
 
 h2{
@@ -217,7 +218,7 @@ h2{
     img{
         // height: 400px;
         // width: 800px;
-        @include sizes(400px, 800px);
+        @include sizes(800px, 400px);
     }
 }
 
@@ -297,6 +298,11 @@ h2{
     }
 }
 
+.contacts-text{
+    text-align: center;
+    font-size: 16px;
+}
+
 #body-grid{
     display: grid;
     grid-template-areas: "header"
@@ -371,7 +377,7 @@ aside{
     .nosotros-img-container img{
         // height: 300px;
         // width: 600px;
-        @include sizes(300px, 600px);
+        @include sizes(600px, 300px);
     }
 
     .container-details-product{
@@ -403,6 +409,10 @@ aside{
 /* La idea a futuro es hacer que la sección de filtros sea un desplegable. */
 
 @media screen and (max-width: 425px){
+    h1{
+        font-size: 20px;
+    }
+
     .navbar-menu{
         flex-direction: column;
 
@@ -462,7 +472,7 @@ aside{
     .nosotros-img-container img{
         // height: 180px;
         // width: 360px;
-        @include sizes(180px, 360px);
+        @include sizes(360px, 180px);
     }
 
     .links-networks-social a img{

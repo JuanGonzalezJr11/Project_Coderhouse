@@ -16,7 +16,8 @@ header {
 
 h1 {
   font-weight: bold;
-  margin: 10px 0px; }
+  margin: 10px 0px;
+  font-size: 35px; }
 
 h2 {
   font-weight: bold; }
@@ -77,8 +78,8 @@ h2 {
   .links-networks-social a {
     margin: 25px; }
     .links-networks-social a img {
-      height: 130px;
-      width: 130px; }
+      width: 130px;
+      height: 130px; }
 
 .container-catalogue {
   display: flex;
@@ -126,8 +127,8 @@ h2 {
   justify-content: space-between;
   transition: padding 1s; }
   .product-card img {
-    height: 200px;
     width: 200px;
+    height: 200px;
     transition: 1s; }
   .product-card a {
     text-decoration: none;
@@ -139,8 +140,8 @@ h2 {
   background-color: #52796f;
   padding: 25px; }
   .product-card:hover img {
-    height: 210px;
-    width: 210px; }
+    width: 210px;
+    height: 210px; }
   .product-card:hover a {
     color: white; }
   .product-card:hover a:hover {
@@ -152,8 +153,8 @@ h2 {
   margin-top: 10px;
   margin-bottom: 20px; }
   .nosotros-img-container img {
-    height: 400px;
-    width: 800px; }
+    width: 800px;
+    height: 400px; }
 
 .container-details-product {
   display: flex;
@@ -164,8 +165,8 @@ h2 {
   width: 50%;
   justify-content: center; }
   .container-img-product img {
-    height: 400px;
-    width: 400px; }
+    width: 400px;
+    height: 400px; }
 
 .container-description-product {
   display: flex;
@@ -209,6 +210,10 @@ h2 {
       height: 30px; }
     .container-comments form button:hover {
       background-color: #354f52; }
+
+.contacts-text {
+  text-align: center;
+  font-size: 16px; }
 
 #body-grid {
   display: grid;
@@ -259,8 +264,8 @@ aside {
       margin: 0px 0px;
       padding-left: 30px; }
   .nosotros-img-container img {
-    height: 300px;
-    width: 600px; }
+    width: 600px;
+    height: 300px; }
   .container-details-product {
     display: flex;
     flex-direction: column; }
@@ -268,8 +273,8 @@ aside {
     display: flex;
     width: auto; }
     .container-img-product img {
-      height: 320px;
       width: 320px;
+      height: 320px;
       align-items: center; }
   .container-description-product {
     display: flex;
@@ -280,6 +285,8 @@ aside {
 /* Celular (normal)*/
 /* La idea a futuro es hacer que la sección de filtros sea un desplegable. */
 @media screen and (max-width: 425px) {
+  h1 {
+    font-size: 20px; }
   .navbar-menu {
     flex-direction: column; }
     .navbar-menu .navbar-logo {
@@ -316,8 +323,8 @@ aside {
     flex-direction: column;
     align-items: center; }
   .nosotros-img-container img {
-    height: 180px;
-    width: 360px; }
+    width: 360px;
+    height: 180px; }
   .links-networks-social a img {
-    height: 70px;
-    width: 70px; } }
+    width: 70px;
+    height: 70px; } }
